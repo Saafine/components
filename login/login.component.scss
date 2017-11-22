@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+.this-login-background {
+  background: teal;
+  //background: url('background.jpg') no-repeat fixed center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+}
+
+.this-login-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.this-login-center {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.this-login-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // ! This defines how blocks are positioned vertically
+  width: 400px;
+  height: 100%;
+}
+
+.this-login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background: $container-background;
+  text-align: center;
+  padding: 50px;
+  flex-shrink: 0;
+  @include z-depth-1;
+}
